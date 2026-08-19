@@ -1,5 +1,7 @@
 # Identifying components on the PCB
 
+Examining the PCB, there appears to be five noteworthy components that should be examined. These include two on the front of the PCB and three on the back.
+
 ## Front of PCB
 
 ### [SigmaStar SSC333: High-Integrated SoC Processor](https://linux-chenxing.org/infinity6/ssc333_pb_v01.pdf)
@@ -32,6 +34,8 @@ This is the PCB's UART Interface with nicely labeled TX, RX, GND, and VCC pads. 
 This is an 8-Channel Darlington Transistor Array used to drive loads that the SoC cannot drive directly. Most likely used for LEDs and the Pan-Tilt-Zoom stepper motor.
 
 ### [XMC 25QH64](https://www.xmcwh.com/uploads/442/XM25QH64C.pdf)
+
+![XMC 25QH64: Flash Chip](./Images/FlashChip.jpg)
 
 This is the device's flash memory that communicates over SPI and has 8MB storage. Will most likely contain, at least, a portion of the device's firmware, if not all of it.
 
